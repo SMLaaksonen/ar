@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Marker master</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/siimple@3.3.1/dist/siimple.min.css">
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+		<script type="text/javascript" src="arjs.js"></script>
+	</head>
+	<body onload="checkUser();">
+		<div class="siimple-grid">
+			<div class="siimple-grid-row">
+				<div class="siimple-grid-col siimple-grid-col--12 siimple-grid-col--sm-12">
+					<div class="siimple-box--large siimple--bg-dark siimple--color-white siimple--text-center siimple--rounded">
+						<div class="siimple-box-title">Marker master
+												<br>
+						<img style="text-align:center;" src="spaceinvadermarker.jpg">
+
+						</div>
+						<div class="siimple-box-subtitle">Scan all markers</div>
+					</div>
+				</div>
+			</div>
+			<form name="start_form" id="startform" method="post" action="login.php">
+			<div class="siimple-grid-row">
+				<div class="siimple-grid-col siimple-grid-col--6 siimple-grid-col--sm-12">
+					<div class="siimple-form-field-label siimple--text-center">Your name</div>
+				</div>
+				<div class="siimple-grid-col siimple-grid-col--6 siimple-grid-col--sm-12">
+					<input name="ar_name" id="arname" type="text" class="siimple-input siimple-input--fluid" placeholder="Your name">
+				</div>
+			</div>
+			<div class="siimple-grid-row">
+				<div class="siimple-grid-col siimple-grid-col--12 siimple-grid-col--sm-12">
+					<div class="siimple-form-field siimple--text-center">
+						<div class="siimple-btn siimple-btn--green" onclick="submitForm();">Start</div>
+					</div>
+				</div>
+			</div>
+			</form>
+			<form name="best_form" id="bestform" method="get" action="best.php">
+			<div class="siimple-grid-row">
+				<div class="siimple-grid-col siimple-grid-col--12 siimple-grid-col--sm-12">
+					<div class="siimple-form-field siimple--text-center">
+						<div class="siimple-btn siimple-btn--blue" onclick="submitForm2();">Best collectors</div>
+					</div>
+				</div>
+			</div>			
+			</form>
+		</div>
+	</body>
+</html>
